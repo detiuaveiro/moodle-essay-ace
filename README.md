@@ -14,7 +14,8 @@ Now you can have that.
 1.  Create (or edit) your essay-type question as usual.
 1.  In `Response options / Response format`,
     select `Plain text, monospaced font`.
-1.  In `Question text` add the HTML code below.
+1.  In `Question text`, add the HTML code below.
+    You may remove or adjust the "Optional" parts.
     ```html
     <!-- Embed the Ace code editor from your favorite source -->
     <script src="https://cdn.jsdelivr.net/npm/ace-builds/src-min-noconflict/ace.min.js"></script>
