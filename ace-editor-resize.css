@@ -1,0 +1,9 @@
+/*
+ *  Style the #ace_editor element to be vertically resizable.
+ *  JMR 2024
+ */
+
+#ace_editor {
+    border: 1px solid lightgray;
+    resize: vertical;
+    overflow: hidden;

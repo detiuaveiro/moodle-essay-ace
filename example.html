@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<!-- Embed the Ace code editor from your favorite source -->
+<script src="https://cdn.jsdelivr.net/npm/ace-builds/src-min-noconflict/ace.min.js"></script>
+
+<!-- Embed the Moodle Essay Ace script -->
+<script src="./moodle-essay-ace.js"></script>
+
+<!-- Optional: include CSS properties for the editor container -->
+<link rel="stylesheet" href="./ace-editor-resize.css">
+
+<!-- Optional: set options for Ace in a global var -->
+<script>
+var ACE_OPTIONS = {
+    theme: "ace/theme/xcode",
+}
+</script>
+
+<!-- Insert the <div id="ace_editor"> to contain the Ace editor! -->
+<!-- Optional: set additional options using data- attributes. -->
+<div id="ace_editor" data-mode="ace/mode/javascript" data-font-size="1rem" >
+If you're reading this, some error occurred.
+The Ace editor should be here!
+</div>
+
+
+
+<!-- The following emulates the editor elements in a Moodle Essay question. -->
+<div class="ablock">
+<div class="answer">
+<label class="sr-only" for="q2999229:1_answer_id">Texto da resposta Pergunta 1</label>
+<textarea name="q2999229:1_answer" id="q2999229:1_answer_id" class="qtype_essay_monospaced qtype_essay_response form-control" rows="10" cols="60">function fun(x) {
+    let y = x + 912;
+    return y;
+}
+</textarea>
+<input type="hidden" name="q2999229:1_answerformat" value="2" />
+</div>
+<div class="attachments">
+</div>
+</div>
