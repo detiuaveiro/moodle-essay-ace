@@ -1,7 +1,9 @@
 # moodle-essay-ace
 
 A script to substitute the editor in a Moodle essay question with
-the Ace code editor.
+the [Ace code editor][ace].
+
+[ace]: https://ace.c9.io/
 
 ## Motivation
 
@@ -41,10 +43,12 @@ Now you can have that.
     ```
 
 __NOTE:__
-I strongly recommend that you set your default editor to the
-plain text editor in Moodle preferences, __before__ editing the question.
-Set the plain text editor to `HTML format` or `Markdown` on the
-`Question text` field.
-Set to `Plain text format` for the `Response template`.
+I strongly recommend that you:
+- [Set your default editor][mdlSetEditor] to the "plain text area" in Moodle preferences,
+  _before_ editing the question.
+- Select `HTML format` or `Markdown` on the `Question text` field.
+- Set to `Plain text format` for the `Response template`.
+
+[mdlSetEditor]: https://docs.moodle.org/en/Text_editor_FAQ#Can_I_change_editors?
 
 
