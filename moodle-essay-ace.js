@@ -39,12 +39,12 @@ window.onload = function() {
         editor.setOptions(ACE_OPTIONS || {});
         editor.setOptions(editor.container.dataset);
 
-        // Fill editor with initial value
-        editor.setValue(mdl_ta.textContent);
+        // Fill editor with initial value (and reset undo history)
+        editor.session.setValue(mdl_ta.textContent);
 
         // Synchronize moodle essay textarea whenever text modified
         editor.session.on('change', function(delta) {
-            mdl_ta.textContent = editor.getValue();
+            mdl_ta.textContent = editor.session.getValue();
         });
         
         // Set editor height based on moodle editor's rows
