@@ -51,4 +51,17 @@ I strongly recommend that you:
 
 [mdlSetEditor]: https://docs.moodle.org/en/Text_editor_FAQ#Can_I_change_editors?
 
+## Setting Ace options
 
+You may set any of the [Ace editor option][ace-options].
+The `moodle-essay-ace` script applies options in this order:
+
+1. Default options.
+2. Options set in the global variable `ACE_OPTIONS`.
+3. Options passed in `data-` attributes in the `<div id="ace_editor>"` element.
+
+Options set in a step will override settings of the same option in previous steps.
+
+
+
+[ace-options]: https://github.com/ajaxorg/ace/wiki/Configuring-Ace
